@@ -3,6 +3,31 @@ Change Log
 
 This is the history of version updates.
 
+**Version 1.6.0**
+
+- CHANGED: DTReachability now passes DTReachabilityInformation to observers
+- CHANGED: DTReachability revamped to allow monitoring custom hosts, no longer a singleton
+- FIXED: Missing Code Coverage monitoring
+- CHANGED: Refactored DTZipArchive and added more unit tests for GZip
+- CHANGED: Prefixed some C-functions to avoid conflicts
+- FIXED: Analyze Warnings
+- FIXED: Some 64-bit and Xcode 4/5 build issues 
+
+**Version 1.5.4**
+
+- ADDED: Coverage Monitoring via Coveralls
+- ADDED: DTBlockFunctions
+- FIXED: DTZipArchive: completion block would be called twice if uncompressing has error
+- FIXED: Warning in minizip
+- CHANGED: Removed shadow from PieProgressIndicator to fit iOS7 style
+
+**Version 1.5.3**
+
+- FIXED: Warnings on DTZipArchive
+- FIXED: GZ file handle error
+- CHANGED: Updated build flags for static libs and frameworks
+- ADDED: Continuous Integration via Travis-CI
+
 **Version 1.5.2**
 
 - ADDED: Method for duplicating template image tinting under iOS 6
