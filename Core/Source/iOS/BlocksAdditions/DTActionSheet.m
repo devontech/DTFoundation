@@ -33,10 +33,12 @@
 	return self;
 }
 
+#ifndef DT_EXTENSION
 - (instancetype)initWithTitle:(NSString *)title
 {
 	return [self initWithTitle:title delegate:nil cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil];
 }
+#endif
 
 - (instancetype)initWithTitle:(NSString *)title delegate:(id<UIActionSheetDelegate>)delegate cancelButtonTitle:(NSString *)cancelButtonTitle destructiveButtonTitle:(NSString *)destructiveButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ...
 {

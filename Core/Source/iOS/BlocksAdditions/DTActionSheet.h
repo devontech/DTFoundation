@@ -17,11 +17,13 @@ typedef void (^DTActionSheetBlock)(void);
 
 @interface DTActionSheet : UIActionSheet
 
+#ifndef DT_EXTENSION
 /**
  Initializes the action sheet using the specified title. 
  @param title The title
  */
 - (instancetype)initWithTitle:(NSString *)title;
+#endif
 
 /**
  Adds a custom button to the action sheet.
